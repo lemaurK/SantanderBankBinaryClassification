@@ -1,19 +1,30 @@
-![UTA-DataScience-Logo](https://user-images.githubusercontent.com/89792487/208189079-d4fc4d67-01bc-4397-891e-52f05330eb12.png)
+![UTA-DataScience-Logo](https://user-images.githubusercontent.com/89792487/208189079-d4fc4d67-01bc-4397-891e-52f05330eb12.png) ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/e1c3b1bc-794b-487e-b4de-f38c23d6f449)
 
-# SantanderCustomerTransactionPrediction
 
-* This repository holds an attempt to complete the [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/overview)
+# Santander Customer Transaction Prediction
+
+* This repository holds an attempt to complete the [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/overview) using a few dimension reduction techniques and three models: Logistic Regression, Deep Learning, and K-Nearest Neighbors.
 
 ## Overview
+**Definition of Challenge** 
+* The overarching question this challenge asks is "Can you identify who will make a transaction?"
+* Given 199 features of anonymized data on 200,000 customers, including a **binary** feature outlining whether the customer made the purchase or not, use ML/DL to create a model that predicts, with great accuracy, if a given customer will make a purchase.
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+**My Approach**
+* Due to the high dimensionality of this dataset, I employed a few dimension redcution algorithms in order to feed my models cleaned, balanced, and appropriate data. 
+* Dimension Reduction Techniques
+  * Principal Component Analysis (PCA)
+  * Random Forest
+  * Variance Inflation Factor (VIF)
+* Models
+  * Logistic Regression 
+  * Deep Learning Neural Network
+  * K-Nearest Neighbors
 
-## Summary of Workdone
+**Performance Achieved**
+* The highest accuracy was achieved by Logistic Regression at 91.2% and the highest Kaggle score was achieved by Deep Learning at 0.629. The higest Kaggle score achieved by a competitor was 0.92573.
 
-Include only the sections that are relevant an appropriate.
+## Summary of Work Done
 
 ### Data
 
