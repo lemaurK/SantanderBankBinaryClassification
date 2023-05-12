@@ -27,21 +27,60 @@
 ## Summary of Work Done
 
 ### Data
+* Type:
+  * 200 anonymized features representing customer behavior/history.
+* Training Dataset
+  * 200000 rows × 202 columns
+  * Includes target variable
+* Testing Dataset 
+  * 200000 rows × 201 columns
+  * Omits target variable
+* Size: 1.06 GB for both the training and testing datasets
+* Train & Test Split **after Dimension Reduction**:
+  * Training Dataset
+    * 200000 rows × 177 columns
+  * Testing Dataset
+    * 200000 rows × 176 columns
 
-* Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+**Dimension Reduction**
+* Prinicipal Component Analysis (PCA)
+![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/ac404f92-fb59-4b63-804d-a22cc9776b9c)
+![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/0310b22a-1a36-4932-911d-bfd10765f64a)
+  * Due to the nature of the dataset explained in the **Data Visualization** section, I couldn't use these results.
+
+* Random Forest Regressor
+![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/d501d06b-36fd-4a93-9afd-33409a4c76c8)
+  * Due to the nature of the dataset explained in the **Data Visualization** section, I couldn't use these results.
+
+* Variance Inflation Factor 
+![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/fa9933c4-d92e-46b3-a08b-feef2fe9fc0b)
+  * The features represented in this plot were omitted from model training/testing.
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+* Dataset Descriptive Statistics
+  * Distrtibution of pd.describe() function
+    * Training
+    
+    ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/7aa7f995-991e-48e7-9903-27ed78b48072)
+
+    * Testing
+    
+    ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/0f156ba4-0a8f-4e2f-8ea8-b574cc2da186)
+    
+  * Distribution of Target Variable
+    * Ones - Customer made a purchase (10.049%)
+    * Zeros - Customer did not make a purchase (89.951%)
+    ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/75333ccf-e1c1-442e-9871-928ddeb001a3)
+  
+  * Feature Correlation Heatmap
+    * This  
+    ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/151b07b2-b174-43b9-b954-3fa3ce46a884)
+
+
 
 ### Problem Formulation
 
