@@ -77,7 +77,7 @@
     ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/75333ccf-e1c1-442e-9871-928ddeb001a3)
   
   * Feature Correlation Heatmap
-    * This  
+    * This heatmap essentially saying there are no correlations between any features which is generally favorable, but for the sake of dimension reduction it is unfavorable.
     ![image](https://github.com/lemaurK/SantanderBankBinaryClassification/assets/89792487/151b07b2-b174-43b9-b954-3fa3ce46a884)
 
 
